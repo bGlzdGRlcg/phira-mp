@@ -68,3 +68,17 @@ netstat -tuln | grep 12345
 ## For Windows or Android
 View: [https://docs.qq.com/doc/DU1dlekx3U096REdD](https://docs.qq.com/doc/DU1dlekx3U096REdD)
 
+# listder build
+OS:Debian 11
+## for amd
+```shell
+wget https://github.com/bGlzdGRlcg/phira-mp/releases/download/linux/phira_amd
+chmod 777 phira_amd
+RUST_LOG=debug ./phira_amd --port 8443
+```
+## for arm
+```shell
+wget https://github.com/bGlzdGRlcg/phira-mp/releases/download/linux/phira_arm
+chmod 777 phira_arm
+RUST_LOG=debug ./phira_arm --port 8443
+```
